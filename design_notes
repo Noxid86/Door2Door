@@ -1,0 +1,32 @@
+/////PAGES/////
+
+USER LOGIN:
++ Canvasser
++ Team Leader
++ Admin
+
+CANVASSER OVERVIEW:
++ KPIs
++ Office stats
++ Request Indy
+
+TEAM OVERVIEW:
++ TLs KPIs
++ Team Member KPIs
++ Team Totals
++ Team Member Notes
++ Office stats
+
+OFFICE OVERVIEW:
++ Access to all individual KPIs
++ Team Member KPIs
++ Team Totals
++ Team Member Notes
++ Office stats
++ Map Assignment
+
+NAVIGATOR:
++ Display contacts for the canvasser currently logged in
++ Allow reordering of contacts
++ Add Map plugin.
++ Accept Input for Canvasser Interaction questions

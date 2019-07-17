@@ -1,0 +1,32 @@
+DEVELOPMENT NOTES:
++Components
+  + GUI
+    + Stats Bar: displays the following info [doors knocked] [contacts] [new members]
+    + Walk order and "Lap" functionality: By tapping "set walk order" the
+      canvasser may change the order in which contact blocks are displayed.
+      After any contact has been "knocked" it will become gray until the "Lap"
+      is reset.
+    + Contact List: contains ordered contact blocks
+      + Contact Blocks - Expand to give and receive information about the
+        contact by the canvasser
+      + Map View - Displays a Google Maps plugin at the top of the screen which
+        places pins at each contact, leaving the bottom half of the screen as a
+        contact list
+
+
+RESPONSE TREE
+This is the branch of questions that should be asked in the contact blocks
+once opened.
+
+contact? YES | NO
+  If yes:
+    Listed? YES | NO
+    Giving? YES | NO
+      If no:
+         Objection? MONEY | SPOUSE | RESEARCH | X
+        +close contact
+      If yes:
+        +close contact
+  If no:
+    Why? NOT HOME | BAD ADDRESS | REFUSED
+        +close contact

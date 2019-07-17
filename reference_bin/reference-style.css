@@ -1,0 +1,128 @@
+/*-------------
+  GLOBAL STYLES
+--------------*/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.contact_wrapper {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact_wrapper h1 {
+  background-color: rgb(225, 255, 204);
+  color: #4d7d1f;
+  text-align: center;
+  max-width: 250px;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.contact_wrapper *{
+  flex-grow: 1;
+}
+.contact_wrapper:hover>.response_wrapper{
+  display: flex;
+}
+
+/*-------------
+  INFO WRAPPER
+--------------*/
+.contact_name {
+ border-radius: 10px;
+ background-color: rgb(215, 149, 0);
+ margin: 5px;
+}
+.contact_name h1{
+  padding-top: 20px;
+  background-color:   #f4c82d;
+  color:  white;
+  height: 60px;
+  margin: 5px;
+  border-radius: 8px;
+}
+.info_wrapper {
+  box-shadow: 10px 10px 5px #888888;
+  background-color: #84D633;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-right: 0px;
+}
+
+.info_wrapper>.knock {
+  background-color: #f4c82d;
+  margin: 5px;
+  margin-left: -20px;
+  border-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 3px solid rgb(215, 149, 0);
+}
+.knock::after {
+  content: "";
+  position: relative;
+  left: 40px;
+  top: 40px;
+  width: 0px;
+  height: 0px;
+  border: 20px solid transparent;
+  border-top-color: rgb(215, 149, 0);
+
+}
+
+
+
+/*-------------
+  RESPONSE WRAPPER
+--------------*/
+.response_wrapper {
+  background-color: #E3F85D;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: none;
+}
+.response_selection {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  justify-content: center;
+}
+.response_selection .button {
+  background-color: #9B8624;
+  color: white;
+  margin: 10px;
+  padding-top: 15px;
+  border-radius: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+.response_prompt {
+  flex-grow: 1;
+  padding: 15px;
+  background: #888888;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/*CONTACT RESPONSE PANEL BUTTON HIDING*/
+
+.response_selection .button {
+  display: none;
+}
